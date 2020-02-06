@@ -23,9 +23,9 @@ RUN git clone --branch "${OPERATOR_SDK_RELEASE}" --depth=1 -- "${OPERATOR_SDK_GI
     && make install
 
 # certmerge-operator
-ENV CERTMERGE_RELEASE=v0.0.3-gpii.0 \
+ENV CERTMERGE_RELEASE=v0.0.3-gpii.2 \
     CERTMERGE_PROJECT=github.com/gpii-ops/certmerge-operator \
-    CERTMERGE_GIT_SHA=d7821bdd9d2defb72f11d5c6b781d0d55817f9d5
+    CERTMERGE_GIT_SHA=9727eb15ce7fee160bef4bfc3ccec4808e3e4feb
 
 ENV CERTMERGE_GIT_REPO=https://${CERTMERGE_PROJECT}.git
 
